@@ -62,14 +62,14 @@ ENV G4ENSDFSTATEDATA="/app/geant4/share/Geant4-10.6.3/data/G4ENSDFSTATE2.2"
 
 ENV SUPERA_WITHOUT_PYTHON=1
 
-RUN git clone https://github.com/DeepLearnPhysics/SuperaAtomic.git && \
+RUN git clone https://github.com/drinkingkazu/SuperaAtomic.git && \
     cd SuperaAtomic && \
     set SUPERA_WITHOUT_PYTHON=1 && \
-    python3 setup.py install && \
+    python3 setup.py install --user && \
     cd .. && \
-    git clone https://github.com/DeepLearnPhysics/edep2supera.git && \
+    git clone https://github.com/drinkingkazu/edep2supera.git && \
     cd edep2supera && \
-    python3 setup.py install
+    python3 setup.py install --user
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
