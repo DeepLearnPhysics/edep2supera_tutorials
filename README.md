@@ -1,6 +1,6 @@
 # edep2supera Tutorials
 
-This is a collection of Jupyter notebooks and tutorials to get you up to speed on [`edep2supera`](https://github.com/DeepLearnPhysics/edep2supera). You can view the tutorial page [here](https://deeplearnphysics.org/edep2supera_tutorial/).
+This is a collection of Jupyter notebooks and tutorials to get you up to speed on [`edep2supera`](https://github.com/DeepLearnPhysics/edep2supera). You can view the tutorial page [here](https://deeplearnphysics.org/edep2supera_tutorials/).
 
 Below is an instruction for how to contribute in this documentation
 
