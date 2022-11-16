@@ -40,6 +40,18 @@ There are two key points to be aware: how to setup the software stack and how to
 
 `edep2supera` requires `larcv2` and `SuperaAtomic` to be installed and built. We strongly recommend users to use a Docker or Singularity software containers prepared by the maintainers of `edep2supera`.
 
+A Docker image with these softwares installed can be found at our [docker repository](https://hub.docker.com/layers/deeplearnphysics/dune-nd-sim/ub20.04-cpubase-edep2supera/images/sha256-a9f01459ec3f67c85e2bea813d14d1069ca41a5d8f4b8f301336b992de238ca2?context=repo)
+
+A singularity image can be also found at SDF location:
+```
+/sdf/group/neutrino/images/ub20.04-cpubase-edep2supera.sif
+```
+
+Or build a singularity image from the docker hub:
+```
+singularity build ub20.04-cpubase-edep2supera.sif docker://deeplearnphysics/dune-nd-sim:ub20.04-cpubase-edep2supera
+```
+
 ### `edep-sim` file
 
 `edep2supera` (and underlying algorithms) assumes `edep-sim` is run in a certain way to maximize the level of details (and thus amount of) simulation information stored. In particular, when you run `edep-sim`, please make sure to include these lines:
