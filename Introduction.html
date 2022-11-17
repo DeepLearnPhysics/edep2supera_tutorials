@@ -582,7 +582,7 @@ title="Print to PDF"
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">DeepLearnPhysics</span><span class="o">/</span><span class="n">SuperaAtomic</span>
 <span class="n">cd</span> <span class="n">SuperaAtomic</span>
 <span class="n">export</span> <span class="n">SUPERA_WITHOUT_PYTHON</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">.</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
 <p>Note you want to set <code class="docutils literal notranslate"><span class="pre">SUPERA_WITHOUT_PYTHON=1</span></code>. Without specifying this, <code class="docutils literal notranslate"><span class="pre">SuperaAtomic</span></code> will be built with <code class="docutils literal notranslate"><span class="pre">pybind11</span></code> which would be incompatible with <code class="docutils literal notranslate"><span class="pre">edep2supera</span></code>. Don’t worry: <code class="docutils literal notranslate"><span class="pre">SuperaAtomic</span></code> will still be usable in Python after you build <code class="docutils literal notranslate"><span class="pre">edep2supera</span></code>.</p>
@@ -597,7 +597,7 @@ title="Print to PDF"
 <p>Similarly, below is how you can install <code class="docutils literal notranslate"><span class="pre">edep2supera</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">DeepLearnPhysics</span><span class="o">/</span><span class="n">edep2supera</span>
 <span class="n">cd</span> <span class="n">edep2supera</span>
-<span class="n">python3</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">.</span> <span class="o">--</span><span class="n">user</span>
 </pre></div>
 </div>
 <p>After you modify the source code, again simply try:</p>
