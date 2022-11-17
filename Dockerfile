@@ -65,11 +65,11 @@ ENV SUPERA_WITHOUT_PYTHON=1
 RUN git clone https://github.com/drinkingkazu/SuperaAtomic.git && \
     cd SuperaAtomic && \
     set SUPERA_WITHOUT_PYTHON=1 && \
-    python3 setup.py install --user && \
+    pip install . && \
     cd .. && \
     git clone https://github.com/drinkingkazu/edep2supera.git && \
     cd edep2supera && \
-    python3 setup.py install --user
+    pip install .
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
@@ -83,8 +83,7 @@ RUN adduser --disabled-password \
     ${NB_USER}
     
 # Make sure the contents of our repo are in ${HOME}
-WORKDIR /app
-COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+WORKDIR ${HOME}
