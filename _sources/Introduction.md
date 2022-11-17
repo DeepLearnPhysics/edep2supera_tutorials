@@ -88,7 +88,7 @@ Note you want to set `SUPERA_WITHOUT_PYTHON=1`. Without specifying this, `Supera
 
 In development, after you modify your code, simply repeat:
 ```
-python3 setup.py install --user
+pip install . --user
 ```
 (and perhaps you may also have to re-install `edep2supera` if C++ dependent source code has changed).
 
@@ -103,5 +103,5 @@ pip install . --user
 
 After you modify the source code, again simply try:
 ```
-python3 setup.py install --user
+pip install . --user
 ```
