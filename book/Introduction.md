@@ -72,6 +72,7 @@ The most critical nature required (and enabled above) is that a generated trajec
 
 
 ## For developers
+
 If you are to develop the code, most likely you would want to install `SuperaAtomic` and `edep2supera`. We recommend you to use the same container described above, then locally install the developer version of these softwares.
 
 ### `SuperaAtomic` Installation
@@ -80,7 +81,7 @@ The command below will build and install `SuperaAtomic` to your local area (`$HO
 git clone https://github.com/DeepLearnPhysics/SuperaAtomic
 cd SuperaAtomic
 export SUPERA_WITHOUT_PYTHON=1
-python3 setup.py install --user
+pip install . --user
 ```
 
 Note you want to set `SUPERA_WITHOUT_PYTHON=1`. Without specifying this, `SuperaAtomic` will be built with `pybind11` which would be incompatible with `edep2supera`. Don't worry: `SuperaAtomic` will still be usable in Python after you build `edep2supera`.
@@ -97,7 +98,7 @@ Similarly, below is how you can install `edep2supera`.
 ```
 git clone https://github.com/DeepLearnPhysics/edep2supera
 cd edep2supera
-python3 setup.py install --user
+pip install . --user
 ```
 
 After you modify the source code, again simply try:
